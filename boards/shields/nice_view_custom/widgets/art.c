@@ -320,11 +320,11 @@ const lv_img_dsc_t layout_opp_h = {
   .data = layout_opp_h_map,
 };
 
-#ifndef LV_ATTRIBUTE_IMG_LAYOUT-OPP-VERT
-#define LV_ATTRIBUTE_IMG_LAYOUT-OPP-VERT
+#ifndef LV_ATTRIBUTE_IMG_LAYOUT_OPP_VERT
+#define LV_ATTRIBUTE_IMG_LAYOUT_OPP_VERT
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_LAYOUT-OPP-VERT uint8_t layout_opp_vert_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_LAYOUT_OPP_VERT uint8_t layout_opp_vert_map[] = {
   #if CONFIG_NICE_VIEW_WIDGET_INVERTED
         0xff, 0xff, 0xff, 0xff, /*Color of index 0*/
         0x00, 0x00, 0x00, 0xff, /*Color of index 1*/
