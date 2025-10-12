@@ -118,7 +118,13 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     //bool random = sys_rand32_get() & 1;
     //lv_img_set_src(art, random ? &balloon : &mountain);
     //lv_obj_align(art, LV_ALIGN_TOP_LEFT, 0, 0);
+
+    #if IS_ENABLED(NOT CONFIG_ZMK_SPLIT OR CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
     lv_img_set_src(art, &layout_opp_h);
+    #else
+    lv_img_set_src(art, &layout_opp_vert);
+    #endif
+    
 
     sys_slist_append(&widgets, &widget->node);
     widget_battery_status_init();
