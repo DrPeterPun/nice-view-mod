@@ -120,7 +120,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
     //lv_obj_align(art, LV_ALIGN_TOP_LEFT, 0, 0);
 
     #if IS_ENABLED(NOT CONFIG_ZMK_SPLIT OR CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
-    lv_img_set_src(art, &layout_opp_h);
+    lv_img_set_src(art, &layout_opp_vert);
     #else
     lv_img_set_src(art, &layout_opp_vert);
     #endif
@@ -132,5 +132,6 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
 
     return 0;
 }
+
 
 lv_obj_t *zmk_widget_status_obj(struct zmk_widget_status *widget) { return widget->obj; }
