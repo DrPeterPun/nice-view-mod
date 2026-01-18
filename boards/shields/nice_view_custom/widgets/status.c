@@ -44,6 +44,7 @@ struct wpm_status_state {
     uint8_t wpm;
 };
 
+
 static void draw_top(lv_obj_t *widget, lv_color_t cbuf[], const struct status_state *state) {
     lv_obj_t *canvas = lv_obj_get_child(widget, 0);
 
